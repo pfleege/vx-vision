@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { site } from "@/data/site";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -20,6 +21,18 @@ export default function HeroSection() {
             Explore technology
           </Link>
         </div>
+      </div>
+      <div className="hero-visual">
+        <Image
+          src={site.hero.image}
+          alt={site.hero.imageAlt}
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 60vw"
+          className="hero-image"
+        />
+        <div className="hero-image-shade" />
+        <span className="hero-index">01 / VX ONE</span>
       </div>
     </section>
   );
