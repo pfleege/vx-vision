@@ -24,6 +24,9 @@ export default function SiteHeader() {
           </Link>
         ))}
       </nav>
+      <Link href="/products/vx-one" className="nav-cta">
+        Discover <span aria-hidden="true">↗</span>
+      </Link>
     </header>
   );
 }

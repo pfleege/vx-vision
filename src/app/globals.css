@@ -55,3 +55,53 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  padding: 0 5vw;
+  border-bottom: 1px solid var(--border);
+  background: rgba(8, 10, 16, 0.84);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+.brand span {
+  color: var(--accent);
+  font-size: 0.65rem;
+  vertical-align: top;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.nav-links a,
+.site-footer a {
+  transition: color 180ms ease;
+}
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--accent);
+}
+
+.nav-cta {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease;
+}
