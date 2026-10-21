@@ -56,6 +56,7 @@ img {
   max-width: 100%;
 }
 
+/* HEADER */
 .site-header {
   position: sticky;
   top: 0;
@@ -106,6 +107,7 @@ img {
     color 180ms ease;
 }
 
+/* FOOTER */
 .site-footer {
   display: flex;
   align-items: center;
@@ -118,4 +120,93 @@ img {
 }
 .site-footer p {
   margin: 0;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 2rem;
+  min-height: min(780px, calc(100svh - 76px));
+  padding: 5rem 7vw 6rem;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+.hero h1 {
+  margin: 1.5rem 0;
+  font-size: clamp(3rem, 6.5vw, 6.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+  font-weight: 600;
+}
+.hero h1 span {
+  display: block;
+  color: transparent;
+  background: linear-gradient(100deg, #b8ff52 0%, #50d8ff 48%, #c69bff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.hero-description {
+  max-width: 390px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+.button-primary,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 48px;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+.button-primary {
+  background: var(--accent);
+  color: #080a10;
+  font-weight: 600;
+}
+.button-primary:hover,
+.button-secondary:hover {
+  transform: translateY(-2px);
+}
+.button-secondary {
+  border: 1px solid var(--border);
+}
+.button-secondary:hover {
+  border-color: var(--cyan);
 }
