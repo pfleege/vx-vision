@@ -1,6 +1,7 @@
 // src/components/home/ProductShowcase.tsx
 
 import { getProducts } from "@/lib/products";
+import ProductGallery from "../products/ProductGallery";
 
 export default async function ProductShowcase() {
   const products = await getProducts();
@@ -10,8 +11,13 @@ export default async function ProductShowcase() {
 
   return (
     <section className="section" id="product">
-      <h2 className="section-title">{product.name}</h2>
-      <p className="section-copy">{product.description}</p>
+      <div className="product-showcase">
+        <ProductGallery product={product} />
+        <div className="product-copy">
+          <h2 className="section-title">{product.name}</h2>
+          <p className="section-copy">{product.description}</p>
+        </div>
+      </div>
     </section>
   );
 }
