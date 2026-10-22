@@ -289,3 +289,18 @@ img {
   font-size: 0.65rem;
   letter-spacing: 0.12em;
 }
+/* PAGE SECTION */
+.section {
+  padding: 7rem 7vw;
+}
+.section-title {
+  margin: 0.8rem 0 1rem;
+  font-size: clamp(2.2rem, 4vw, 4.5rem);
+  line-height: 1.03;
+  letter-spacing: -0.05em;
+}
+.section-copy {
+  max-width: 620px;
+  color: var(--muted);
+  line-height: 1.8;
+}
