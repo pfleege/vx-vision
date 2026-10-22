@@ -20,7 +20,7 @@ export const products: Product[] = [
         alt: "Virtual reality headset, alternate view",
       },
       {
-        src: "https://cdn.pixabay.com/photo/2024/09/13/18/26/ai-generated-9045699_1280.jpg",
+        src: "https://cdn.pixabay.com/photo/2024/10/05/20/11/ai-generated-9098607_1280.jpg",
         alt: "Virtual reality headset detail",
       },
     ],
