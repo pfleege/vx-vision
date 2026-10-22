@@ -226,6 +226,7 @@ img {
 .hero-visual:hover .hero-image {
   transform: scale(1.035);
 }
+/* Applying a shaded cover over the image */
 .hero-image-shade {
   position: absolute;
   inset: 0;
@@ -236,10 +237,54 @@ img {
     rgba(8, 10, 16, 0.65) 100%
   );
 }
+/* The product index and name at the bottom of the image */
 .hero-index {
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
   font-size: 0.7rem;
   letter-spacing: 0.15em;
+}
+/* Glow Effects */
+.hero-glow {
+  position: absolute;
+  z-index: -1;
+  width: 280px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.36;
+  pointer-events: none;
+}
+.hero-glow-cyan {
+  top: 5%;
+  right: 18%;
+  background: var(--cyan);
+}
+.hero-glow-violet {
+  bottom: 5%;
+  left: 10%;
+  background: var(--violet);
+}
+.hero-glow-magenta {
+  top: 5%;
+  right: 18%;
+  background: var(--neon-magenta);
+}
+.hero-glow-gold {
+  bottom: 5%;
+  left: 10%;
+  background: var(--neon-gold);
+}
+.hero-bottom {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 7vw;
+  right: 7vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
 }

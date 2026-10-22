@@ -7,6 +7,9 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="hero">
+      <div className="hero-glow hero-glow-magenta" />
+      <div className="hero-glow hero-glow-gold" />
+
       <div className="hero-copy">
         <p className="eyebrow">{site.hero.eyebrow}</p>
         <h1>
@@ -33,6 +36,11 @@ export default function HeroSection() {
         />
         <div className="hero-image-shade" />
         <span className="hero-index">01 / VX ONE</span>
+      </div>
+
+      <div className="hero-bottom">
+        <span>ENGINEERED FOR WHAT&apos;S NEXT</span>
+        <span>SCROLL TO EXPLORE ↓</span>
       </div>
     </section>
   );
