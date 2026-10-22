@@ -317,9 +317,9 @@ img {
   padding: 1rem;
   background:
     radial-gradient(
-      ellipse at 50% 45%,
-      rgba(80, 216, 255, 0.1),
-      transparent 60%
+      ellipse at 50% 50%,
+      rgba(255, 80, 217, 0.432),
+      transparent 80%
     ),
     #0e1119;
   border: 1px solid var(--border);
@@ -327,7 +327,7 @@ img {
 }
 .product-main-image {
   width: 100%;
-  aspect-ratio: 1.2;
+  aspect-ratio: 1.5;
   object-fit: contain;
   border-radius: 0.5rem;
 }
@@ -339,4 +339,30 @@ img {
 .product-copy p {
   color: var(--muted);
   line-height: 1.8;
+}
+.product-thumbnails {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.product-thumb {
+  position: relative;
+  width: 76px;
+  height: 66px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0.55rem;
+  background: #151925;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.product-thumb[aria-pressed="true"] {
+  border-color: var(--accent);
+  opacity: 1;
+  box-shadow: 0 0 18px rgba(184, 255, 82, 0.1);
+}
+.product-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
