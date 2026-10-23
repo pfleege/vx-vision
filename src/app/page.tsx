@@ -3,6 +3,7 @@
 import HeroSection from "@/components/home/Hero";
 import ProductShowcase from "@/components/home/ProductShowcase";
 import FeatureGrid from "@/components/home/FeatureGrid";
+import TechnologyBanner from "@/components/home/TechnologyBanner";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <HeroSection />
       <ProductShowcase />
       <FeatureGrid />
+      <TechnologyBanner />
     </>
   );
 }
