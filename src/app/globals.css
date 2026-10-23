@@ -304,6 +304,30 @@ img {
   color: var(--muted);
   line-height: 1.8;
 }
+.section-kicker {
+  color: var(--accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.spec-list {
+  display: grid;
+  gap: 0;
+  margin: 1.5rem 0 2rem;
+  border-top: 1px solid var(--border);
+}
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+.spec-row span:first-child {
+  color: var(--muted);
+}
+
 /* PRODUCT SHOWCASE */
 .product-showcase {
   display: grid;

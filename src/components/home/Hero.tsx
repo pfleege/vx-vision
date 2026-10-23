@@ -63,7 +63,7 @@ export default function HeroSection() {
           className="hero-image"
         />
         <div className="hero-image-shade" />
-        <span className="hero-index">01 / NOX ONE</span>
+        <span className="hero-index">01 / VX ONE</span>
       </motion.div>
       <div className="hero-bottom">
         <span>ENGINEERED FOR WHAT&apos;S NEXT</span>
