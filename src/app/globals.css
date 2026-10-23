@@ -510,3 +510,29 @@ img {
   padding: 4rem 7vw;
   text-align: center;
 }
+/* PRODUCT PAGE */
+.product-page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+.product-details h1 {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+.product-details > p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+.product-details > p.request-price {
+  display: block;
+  margin-top: 30px;
+  font-size: clamp(1.1rem, 2vw, 2rem);
+  color: transparent;
+  background: linear-gradient(100deg, #b8ff52 0%, #50d8ff 48%, #c69bff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
