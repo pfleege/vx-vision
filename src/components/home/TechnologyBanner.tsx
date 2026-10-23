@@ -6,7 +6,7 @@ import Reveal from "../motion/Reveal";
 export default function TechnologyBanner() {
   return (
     <Reveal>
-      <section className="tech-banner mt-26">
+      <section className="tech-banner">
         <p className="section-kicker">A different reality awaits</p>
         <h2>Designed for the worlds we haven&apos;t seen yet.</h2>
         <p>

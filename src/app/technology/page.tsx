@@ -1,7 +1,14 @@
 // src/app/technology/page.tsx
 
+import type { Metadata } from "next";
 import Reveal from "@/components/motion/Reveal";
 import FeatureGrid from "@/components/home/FeatureGrid";
+import TechnologyBanner from "@/components/home/TechnologyBanner";
+
+export const metadata: Metadata = {
+  title: "Technology",
+  description: "Explore the fictional technology concepts behind VX Vision.",
+};
 
 export default function TechnologyPage() {
   return (
@@ -27,6 +34,9 @@ export default function TechnologyPage() {
           </div>
         </Reveal>
         <FeatureGrid />
+      </section>
+      <section className="section" style={{ paddingTop: 0, marginTop: -100 }}>
+        <TechnologyBanner />
       </section>
     </>
   );
