@@ -22,7 +22,8 @@ export default function ProductGallery({ product }: { product: Product }) {
         height={900}
         sizes="(max-width: 768px) 100vw, 55vw"
         className="product-main-image"
-        priority={false}
+        // priority={false} // Depreciated
+        loading="lazy"
       />
 
       <div
