@@ -502,3 +502,11 @@ img {
   color: var(--muted);
   line-height: 1.8;
 }
+/* NOT FOUND */
+.not-found {
+  min-height: 50vh;
+  display: grid;
+  place-content: center;
+  padding: 4rem 7vw;
+  text-align: center;
+}
