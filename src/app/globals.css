@@ -310,6 +310,10 @@ img {
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
 .spec-list {
   display: grid;
   gap: 0;
