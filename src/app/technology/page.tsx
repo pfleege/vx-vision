@@ -26,7 +26,9 @@ export default function TechnologyPage() {
         <Reveal>
           <div className="section-heading">
             <p className="section-kicker">Our principles</p>
-            <h2 className="section-title">Engineered around the experience.</h2>
+            <h2 className="section-title">
+              Engineered around the <span>experience</span>.
+            </h2>
             <p className="section-copy">
               These are concept descriptions for a fictional showcase brand, not
               claims about a shipping product.

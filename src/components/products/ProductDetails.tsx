@@ -1,7 +1,9 @@
 // src/components/products/ProductDetails.tsx
 
+import Link from "next/link";
 import type { Product } from "@/types/product";
 import ProductGallery from "./ProductGallery";
+import { Rows } from "lucide-react";
 
 export default function ProductDetails({ product }: { product: Product }) {
   return (
@@ -23,7 +25,26 @@ export default function ProductDetails({ product }: { product: Product }) {
             <p className="request-price">
               <strong>{product.priceLabel}</strong>
             </p>
+            <div className="spec-list">
+              {product.specs.map((spec) => (
+                <div className="spec-row" key={spec.label}>
+                  <span>{spec.label}</span>
+                  <span>{spec.value}</span>
+                </div>
+              ))}
+            </div>
           </div>
+        </div>
+        <div className="detail-panel">
+          <h2>Designed around you</h2>
+          <ul>
+            {product.features.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
+          <Link className="button-primary mt-4" href="/technology">
+            Discover the technology ↗
+          </Link>
         </div>
       </section>
     </>
