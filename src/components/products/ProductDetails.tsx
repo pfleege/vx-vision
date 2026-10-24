@@ -9,7 +9,7 @@ export default function ProductDetails({ product }: { product: Product }) {
   return (
     <>
       <section className="page-hero">
-        <p className="section-kicker">VX / PRODUCT 001</p>
+        <p className="section-kicker">VX / PRODUCT</p>
         <h1>{product.name}</h1>
         <p>
           {product.tagline} {product.description}
@@ -19,7 +19,7 @@ export default function ProductDetails({ product }: { product: Product }) {
         <div className="product-page-layout">
           <ProductGallery product={product} />
           <div className="product-details">
-            <p className="section-kicker">THE SIGNATURE MODEL</p>
+            <p className="section-kicker">{product.tagline}</p>
             <h1>{product.name}</h1>
             <p>{product.description}</p>
             <p className="request-price">
