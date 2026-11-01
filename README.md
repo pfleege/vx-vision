@@ -6,7 +6,11 @@ Next.js 16 · TypeScript · Tailwind CSS v4 · Webpack (no Turbopack in build)
 
 ## About
 
-A dark, demo page with neon color highlights for a fictional VR goggle company. The project has been focused on various CSS techniques that bring the page to life through the use of bold colors and a range of small details, such as delayed text appearances and other animations.
+A dark demo page with neon color highlights for a fictional VR goggle company.
+
+This project focuses on various CSS techniques that bring the page to life through the use of bold colors and a range of small details, such as delayed text appearances and other animations.
+
+In the package.json file, Webpack is being forced in the build command sonce some web hosts only accept webpack.
 
 ## Run
 
