@@ -1,29 +1,11 @@
-import type { NextConfig } from "next";
+// root/next.config.ts
 
+import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
-  /* config options here */
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.pixabay.com",
-        pathname: "/**",
-      },
-    ],
-  },
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
+  poweredByHeader: false,
 };
 
 export default nextConfig;
